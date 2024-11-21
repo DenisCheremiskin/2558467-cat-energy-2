@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon_svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon_180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -437,7 +441,11 @@
           Санкт-Петербург
         </p>
       </address>
-      <img class="map__image" src="#" width="0" height="0" alt="#">
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map_image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с указанием нашего местоположения">
+      </picture>
     </section>
   </main>
 

@@ -6,12 +6,20 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $base-black-text;
   text-align: left;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .catalog__item {
 
+  @media (min-width: 768px) {
+    background-color $base-catalog-fon;
+  }
 }
 
 .catalog__item-link {
@@ -34,6 +42,11 @@
   color: #222222;
   text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog__button {

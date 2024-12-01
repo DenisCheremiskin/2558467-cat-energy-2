@@ -7,12 +7,17 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  color: #000000;
+  color: $base-black-text;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .addition__list {
-
+  list-style-type: none;
 }
 
 .addition__item {
@@ -26,17 +31,31 @@
   color: #222222;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .addition__item-description {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
   line-height: 14px;
+  color: #222222;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .addition__item-price {
+  line-height: 14px;
 
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .addition__button {

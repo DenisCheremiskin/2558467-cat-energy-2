@@ -1,0 +1,45 @@
+.hero {
+  background-color: $bg-base-green;
+}
+
+.hero__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $base-light-color;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $base-black-text;
+  }
+}
+
+.hero__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #$base-light-color;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $base-black-text;
+  }
+}
+
+.hero__image {
+
+}
+
+.hero__button {
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,38 @@
+.navigation {
+
+}
+
+.navigation__logo {
+
+}
+
+.navigation__list {
+  list-style-type: none;
+}
+
+.navigation__item {
+
+}
+
+.navigation__item--current {
+
+}
+
+.navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $base-black-text;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.navigation__menu-button {
+
+}

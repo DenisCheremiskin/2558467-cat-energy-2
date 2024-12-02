@@ -1,7 +1,31 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/button-order.scss";
+@import "./blocks/navigation.scss";
 @import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/program.scss";
+@import "./blocks/instructions.scss";
+@import "./blocks/example.scss";
+@import "./blocks/statistic.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/item-info.scss";
+@import "./blocks/addition.scss";
+@import "./blocks/promotion.scss";
+@import "./blocks/catalog-more.scss";
+@import "./blocks/banner.scss";

@@ -1,0 +1,27 @@
+.statistic {
+
+}
+
+.statistic__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $base-black-text;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.statistic__subtitle {
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

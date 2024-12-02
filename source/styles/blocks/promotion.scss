@@ -1,0 +1,43 @@
+.promotion {
+
+}
+
+.promotion__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $base-black-text;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.promotion__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black-text;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.promotion__input {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.promotion__button {
+  font-size: 20px;
+  line-height: 26px;
+}

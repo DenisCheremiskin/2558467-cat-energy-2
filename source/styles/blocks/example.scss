@@ -1,0 +1,51 @@
+.example {
+  background-color: $base-gray-foh;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: $base-black-text;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__subtitle {
+  text-align: left;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__list {
+  list-style-type: none;
+}
+
+.example__item {
+
+}
+
+.example__cost {
+  font-family: "Oswald", sans-serif;
+  line-height: 20px;
+  color: $base-black-text;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__container {
+
+}

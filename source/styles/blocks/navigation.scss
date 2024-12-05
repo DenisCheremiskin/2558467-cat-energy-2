@@ -34,5 +34,16 @@
 }
 
 .navigation__menu-button {
+  background-color: $base-light-color;
+  background-image: url("../../icons/stack.svg#icon_burger_button");
+  background-repeat: no-repeat;
+  background-size: 24px 16px;
+  border: none;
+  height: 16px;
+  width: 24px;
+}
 
+.navigation__menu-button-close {
+  background-image: url("../../icons/stack.svg#icon_close_button");
+  background-repeat: no-repeat;
 }

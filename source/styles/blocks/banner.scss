@@ -12,3 +12,14 @@
     text-align: left;
   }
 }
+
+.banner__title::after {
+  content: "";
+  background-color: $base-black-text;
+  background-image: url("../../icons/stack.svg#icon_present");
+  background-position: 0;
+  background-size: 48px 61px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+}

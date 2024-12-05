@@ -20,8 +20,43 @@
   list-style-type: none;
 }
 
-.instructions__item {
+.instructions__item::after {
+  content: "";
+  background-color: $bg-base-green;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
 
+.item-leaf::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  width: 25px;
+  height: 28px;
+}
+
+.item-powder::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_powder");
+  width: 24px;
+  height: 28px;
+}
+
+.item-cutlery::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_cutlery");
+  width: 25px;
+  height: 30px;
+}
+
+.item-clock::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_clock");
+  width: 26px;
+  height: 31px;
 }
 
 .instructions__subtitle {

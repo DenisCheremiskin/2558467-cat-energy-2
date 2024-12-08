@@ -1,5 +1,16 @@
 .hero {
-  background-color: $bg-base-green;
+  background-image: url("../../images/hero_bg_image_mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background-image: none;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../../images/hero_bg_image_desktop@2x.jpg");
+  }
 }
 
 .hero__title {
@@ -22,7 +33,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: #$base-light-color;
+  color: $base-light-color;
   text-align: left;
   text-transform: uppercase;
 

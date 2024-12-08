@@ -19,13 +19,29 @@
 }
 
 .footer__social-link-vk {
-
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_vk");
+  width: 30px;
+  height: 17px;
 }
 
 .footer__social-link-youtube {
-
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_youtube");
+  width: 24px;
+  height: 193px;
 }
 
 .footer__social-link-telegram {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_tg");
+  width: 19px;
+  height: 17px;
+}
 
+.link-academy__logo {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_logo_html");
+  width: 27px;
+  height: 34px;
 }

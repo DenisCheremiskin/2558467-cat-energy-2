@@ -20,8 +20,38 @@
   list-style-type: none;
 }
 
-.instructions__item {
+.instructions__item::after {
+  background-color: $bg-base-green;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
 
+.item-leaf::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-size: 25px 28px;
+}
+
+.item-powder::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_powder");
+  background-size: 24px 28px;
+}
+
+.item-cutlery::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_cutlery");
+  background-size: 25px 30px;
+}
+
+.item-clock::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_clock");
+  background-size: 26px 31px;
 }
 
 .instructions__subtitle {

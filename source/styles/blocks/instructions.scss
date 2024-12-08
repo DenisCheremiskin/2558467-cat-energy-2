@@ -21,7 +21,6 @@
 }
 
 .instructions__item::after {
-  content: "";
   background-color: $bg-base-green;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -34,29 +33,25 @@
 .item-leaf::after {
   content: "";
   background-image: url("../../icons/stack.svg#icon_leaf");
-  width: 25px;
-  height: 28px;
+  background-size: 25px 28px;
 }
 
 .item-powder::after {
   content: "";
   background-image: url("../../icons/stack.svg#icon_powder");
-  width: 24px;
-  height: 28px;
+  background-size: 24px 28px;
 }
 
 .item-cutlery::after {
   content: "";
   background-image: url("../../icons/stack.svg#icon_cutlery");
-  width: 25px;
-  height: 30px;
+  background-size: 25px 30px;
 }
 
 .item-clock::after {
   content: "";
   background-image: url("../../icons/stack.svg#icon_clock");
-  width: 26px;
-  height: 31px;
+  background-size: 26px 31px;
 }
 
 .instructions__subtitle {

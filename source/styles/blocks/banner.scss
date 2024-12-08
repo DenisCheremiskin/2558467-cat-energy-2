@@ -1,5 +1,16 @@
 .banner {
-  background-color: $bg-base-green;
+  background-image: url("../../images/banner_bg_image_mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background-image: url("../../images/banner_bg_image_tablet@2x.jpg");
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../../images/banner_bg_image_desktop@2x.jpg");
+  }
 }
 
 .banner__title {
@@ -8,18 +19,19 @@
   text-align: center;
   color: $base-light-color;
 
+
   @media (min-width: 768px) {
     text-align: left;
   }
 }
 
-.banner__title::after {
+.banner__title::before {
   content: "";
-  background-color: $base-black-text;
   background-image: url("../../icons/stack.svg#icon_present");
-  background-position: 0;
-  background-size: 48px 61px;
+  background-size: 78px 80px;
   background-repeat: no-repeat;
-  position: absolute;
+  background-position: center;
+  padding: 59px 101px 151px;
+  color: $base-black-text;
   display: block;
 }

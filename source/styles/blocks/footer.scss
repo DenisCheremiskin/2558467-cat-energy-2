@@ -18,30 +18,46 @@
 
 }
 
-.footer__social-link-vk {
+.footer__social-link-vk::before {
   content: "";
-  background-image: url("../../icons/stack.svg#icon_vk");
+  mask-image: url("../../icons/stack.svg#icon_vk");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  mask-size: 30px 17px;
   width: 30px;
   height: 17px;
+  display: block;
 }
 
-.footer__social-link-youtube {
+.footer__social-link-youtube::before {
   content: "";
-  background-image: url("../../icons/stack.svg#icon_youtube");
+  mask-image: url("../../icons/stack.svg#icon_youtube");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  mask-size: 24px 19px;
   width: 24px;
-  height: 193px;
+  height: 19px;
+  display: block;
 }
 
-.footer__social-link-telegram {
+.footer__social-link-telegram::before {
   content: "";
-  background-image: url("../../icons/stack.svg#icon_tg");
+  mask-image: url("../../icons/stack.svg#icon_tg");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  mask-size: 19px 17px;
   width: 19px;
   height: 17px;
+  display: block;
 }
 
-.link-academy__logo {
+.link-academy__logo::before {
   content: "";
-  background-image: url("../../icons/stack.svg#icon_logo_html");
+  mask-image: url("../../icons/stack.svg#icon_logo_html");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  mask-size: 27px 34px;
   width: 27px;
   height: 34px;
+  display: block;
 }

@@ -24,6 +24,48 @@
 
 }
 
+.instructions__item::before {
+  background-color: $bg-base-green;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.item-leaf::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-powder::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_powder");
+  background-size: 24px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-cutlery::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_cutlery");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-clock::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon_clock");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .instructions__subtitle {
   text-align: left;
 

@@ -1,5 +1,57 @@
 .program {
+  display: block;
+  position: relative;
+}
 
+.program--slim::before {
+  content: "";
+  background-color: $bg-base-green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.program--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#slim_cat");
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+  height: 50px;
+  width: 36px;
+  display: block;
+  position: absolute;
+  left: 27px;
+  top: 21px;
+}
+
+.program--power::before {
+  content: "";
+  background-color: $bg-base-green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.program--power::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#power_cat");
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+  border: none;
+  height: 28px;
+  width: 67px;
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 35px;
 }
 
 .program__name {
@@ -34,9 +86,26 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 22px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.program__link::after {
+  content: "";
+  background-color: $base-black-text;
+  mask-image: url("../../icons/stack.svg#icon_arrow");
+  mask-repeat: no-repeat;
+  mask-size: 24px 12px;
+  mask-position: 100%;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+}
+
+.program__link:hover::after {
+  content: "";
 }

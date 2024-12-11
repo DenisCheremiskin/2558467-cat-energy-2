@@ -17,7 +17,12 @@
   <header class="main-header">
     <nav class="navigation">
       <a class="navigation__logo logo" href="index.html">
-        <img class="logo__image" src="#" width="202" height="59" alt="Логитип компании Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo_cat_energy_desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo_cat_energy_tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__image" src="images/logo_cat_energy.svg" width="33" height="38" alt="Логитип компании Cat Energy">
+        </picture>
+        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="128" height="24" alt="Текстовая часть логотипа компании Cat Energy">
       </a>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current">
@@ -36,7 +41,7 @@
           </a>
         </li>
       </ul>
-      <button class="navigation__menu-button" type="button">
+      <button class="navigation__menu-button navigation__menu-button-close " type="button">
         <span class="visually-hidden">Переключение меню</span>
       </button>
     </nav>
@@ -64,7 +69,7 @@
         Примеры программ питания
       </h2>
       <ul class="programs__list">
-        <li class="programs__item program">
+        <li class="programs__item program program--slim">
           <h3 class="program__name">
             Похудение
           </h3>
@@ -75,7 +80,7 @@
             Каталог slim
           </a>
         </li>
-        <li class="programs__item program">
+        <li class="programs__item program program--power">
           <h3 class="program__name">
             Набор массы
           </h3>
@@ -94,22 +99,22 @@
         Как это работает
       </h2>
       <ul class="instructions__list">
-        <li class="instructions__item">
+        <li class="instructions__item item-leaf">
           <p class="instructions__subtitle">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
-        <li class="instructions__item">
+        <li class="instructions__item item-powder">
           <p class="instructions__subtitle">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
-        <li class="instructions__item">
+        <li class="instructions__item item-cutlery">
           <p class="instructions__subtitle">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
-        <li class="instructions__item">
+        <li class="instructions__item item-clock">
           <p class="instructions__subtitle">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
@@ -151,7 +156,7 @@
           <img class="slider__image" src="images/slider-cat-before-mobile@1x.png" srcset="images/slider-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Большой, милый, пушистый кот, ну ему, возможно, стоило бы слегка скинуть в весе, но совсем не обязательно, если ему так комфортно">
         </picture>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-cat-after-tablet@1x.png 1x, images/slider-cat-after-tablet@2.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-cat-after-tablet@1x.png 1x, images/slider-cat-after-tablet@2x.png 2x">
           <img class="slider__image" src="images/slider-cat-after-mobile@1x.png" srcset="images/slider-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Очаровательно-стройныйный котик, прошедший прогрмму Cat Energy Slim, пример здорового похудения">
         </picture>
         <button class="slider__button" type="button">
@@ -189,25 +194,25 @@
   </main>
   <footer class="footer">
     <a class="footer__logo-link" href="index.html">
-      <img class="footer__logo-image" src="#" width="0" height="0" alt="Логитип компании">
+      <img class="logo_text" src="images/logo_cat_energy_text.svg" width="118" height="21" alt="Текстовая часть логотипа компании Cat Energy">
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
-        <a class="footer__social-link-vk" href="#">
+        <a class="footer__social-link-vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">
             Мы в !
           </span>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link-youtube" href="#">
+        <a class="footer__social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">
             Мы в !
           </span>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link-telegram" href="#">
+        <a class="footer__social-link-telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">
             Мы в !
           </span>
@@ -215,10 +220,9 @@
       </li>
     </ul>
     <a class="link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="link-academy__title">
+      <span class="link-academy__title link-academy__logo">
         HTML Academy
       </span>
-      <img class="link-academy__logo" src="#" width="0" height="0" alt="#">
     </a>
   </footer>
 </body>

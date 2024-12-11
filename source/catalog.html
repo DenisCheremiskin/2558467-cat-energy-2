@@ -17,7 +17,12 @@
   <header class="main-header">
     <nav class="navigation">
       <a class="navigation__logo logo" href="index.html">
-        <img class="logo__image" src="#" width="202" height="59" alt="Логитип компании Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo_cat_energy_desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo_cat_energy_tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__image" src="images/logo_cat_energy.svg" width="33" height="38" alt="Логитип компании Cat Energy">
+        </picture>
+        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="128" height="24" alt="Текстовая часть логотипа компании Cat Energy">
       </a>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current">
@@ -36,7 +41,7 @@
           </a>
         </li>
       </ul>
-      <button class="navigation__menu-button" type="button">
+      <button class="navigation__menu-button navigation__menu-button-close " type="button">
         <span class="visually-hidden">Переключение меню</span>
       </button>
     </nav>
@@ -455,25 +460,25 @@
 
   <footer class="footer">
     <a class="footer__logo-link" href="index.html">
-      <img class="footer__logo-image" src="#" width="0" height="0" alt="Логитип компании">
+      <img class="logo_text" src="images/logo_cat_energy_text.svg" width="118" height="21" alt="Текстовая часть логотипа компании Cat Energy">
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
-        <a class="footer__social-link-vk" href="#">
+        <a class="footer__social-link-vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">
             Мы в !
           </span>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link-youtube" href="#">
+        <a class="footer__social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">
             Мы в !
           </span>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link-telegram" href="#">
+        <a class="footer__social-link-telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">
             Мы в !
           </span>
@@ -481,10 +486,9 @@
       </li>
     </ul>
     <a class="link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="link-academy__title">
+      <span class="link-academy__title link-academy__logo">
         HTML Academy
       </span>
-      <img class="link-academy__logo" src="#" width="0" height="0" alt="#">
     </a>
   </footer>
 </body>

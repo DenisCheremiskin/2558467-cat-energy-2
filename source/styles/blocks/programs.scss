@@ -4,9 +4,27 @@
 
 .programs__list {
   list-style-type: none;
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 80px;
+  }
 }
 
 .programs__item {
   background-color: $base-catalog-fon;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    min-width: 708px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 570px;
+    width: auto;
+  }
 }

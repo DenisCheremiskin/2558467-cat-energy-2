@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     background-image: none;
@@ -49,8 +50,11 @@
 }
 
 .hero__button {
+  padding: 10px 64px;
+
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
+    padding: 14px 26px;
   }
 }

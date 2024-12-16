@@ -8,11 +8,14 @@
   font-weight: 400;
   line-height: 24px;
   color: $base-black-text;
-  text-align: center;
+  text-align: left;
+  margin-top: 60px;
+  margin-bottom: 49px;
 
   @media (min-width: 768px) {
     font-size: 32px;
     line-height: 32px;
+    margin: 74px 0 106px 38px;
   }
 }
 
@@ -21,7 +24,21 @@
 }
 
 .addition__item {
+  display: grid;
+  position: relative;
+  padding-bottom: 25px;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "b c"
+    "d d";
 
+  @media (min-width: 768px) {
+    padding-bottom: 40px;
+    grid-template-areas:
+      "a b c"
+      "d d d";
+  }
 }
 
 .addition__item-title {
@@ -29,35 +46,51 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
+  grid-area: a;
+  padding-bottom: 13px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+    padding: 0 0 25px 38px;
   }
 }
 
 .addition__item-description {
   line-height: 14px;
   color: #222222;
-  text-align: center;
+  text-align: left;
+  grid-area: b;
 
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
+    position: absolute;
+    right: -49px;
   }
 }
 
 .addition__item-price {
   line-height: 14px;
+  text-align: right;
+  grid-area: c;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
+    padding-right: 38px;
   }
 }
 
 .addition__button {
+  padding: 10px 109px;
+  margin-top: 12px;
+  grid-area: d;
 
+  @media (min-width: 768px) {
+    padding: 10px 94px;
+    margin: 0 37px;
+  }
 }

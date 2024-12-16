@@ -17,9 +17,9 @@
 .banner__title {
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: $base-light-color;
-
+  text-align: center;
+  padding: 0 60px 43px;
 
   @media (min-width: 768px) {
     text-align: left;
@@ -32,7 +32,10 @@
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 59px 101px 151px;
-  color: $base-black-text;
+  padding: 93px 50px;
   display: block;
+
+  @media (min-width: 768px) {
+    padding: 93px 50px;
+  }
 }

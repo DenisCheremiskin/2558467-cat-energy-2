@@ -1,5 +1,16 @@
 .map {
+  width: 320px;
+  margin: 0 auto;
 
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .map__title {
@@ -24,9 +35,16 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
+
   }
 }
 
-.map_image {
+.map-container {
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
 
+.map_image {
 }

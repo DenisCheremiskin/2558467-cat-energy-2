@@ -62,6 +62,8 @@
   color: $base-black-text;
   text-align: left;
   text-transform: uppercase;
+  padding: 30px 0;
+  padding-left: 90px;
 
   @media (min-width: 768px) {
     font-size: 36px;
@@ -71,6 +73,7 @@
 
 .program__description {
   text-align: left;
+  padding: 0 33px 80px 20px;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -83,10 +86,9 @@
   font-size: 16px;
   line-height: 16px;
   color: $base-black-text;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 22px;
+  padding: 20px;
 
   @media (min-width: 768px) {
     font-size: 20px;

@@ -1,5 +1,7 @@
 .statistic {
-
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
 }
 
 .statistic__title {

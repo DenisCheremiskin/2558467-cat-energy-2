@@ -1,5 +1,6 @@
 .instructions {
 
+  margin-bottom: 49px;
 }
 
 .instructions__title {
@@ -9,6 +10,7 @@
   line-height: 40px;
   color: $base-black-text;
   text-align: left;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     font-size: 60px;
@@ -35,7 +37,15 @@
 }
 
 .instructions__item {
+  display: grid;
+  grid-template-columns: 60px 200px;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin: 20px 0;
 
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .instructions__item::before {

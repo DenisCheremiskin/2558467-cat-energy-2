@@ -1,8 +1,19 @@
 .footer {
   background-color: $base-catalog-fon;
+  padding: 40px 20px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .footer__logo-link {
+  padding: 0 76px 20px;
+
+  @media (min-width: 768px) {
+
+  }
 }
 
 .footer__logo-image {
@@ -10,11 +21,13 @@
 }
 
 .footer__social-list {
-
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__social-item {
-
+  padding: 20px 12px;
 }
 
 .footer__social-link-vk::before {

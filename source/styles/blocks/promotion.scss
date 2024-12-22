@@ -26,10 +26,11 @@
   text-align: center;
   padding-bottom: 24px;
 
-
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 32px;
+    width: 632px;
+    margin: 0 auto;
   }
 }
 
@@ -39,9 +40,23 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+  width: 275px;
+  height: 56px;
+  padding-left: 10px;
+
+  @media (min-width: 768px) {
+    width: 376px;
+  }
 }
 
 .promotion__button {
   font-size: 20px;
   line-height: 26px;
+  border: none;
+  padding: 15px 81px;
+  margin: 16px 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 15px 69px;
+  }
 }

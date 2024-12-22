@@ -31,6 +31,8 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 84px;
+    border: none;
   }
 }
 
@@ -44,7 +46,7 @@
     "d d d d d d d d";
 
   @media (min-width: 768px) {
-    background-color: $base-catalog-fon;
+    background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 15%);
     padding-top: 0;
     grid-template-areas:
       "a"

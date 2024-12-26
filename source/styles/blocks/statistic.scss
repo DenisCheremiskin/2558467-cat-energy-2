@@ -1,7 +1,9 @@
 .statistic {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: 768px) {
+
+  }
 }
 
 .statistic__title {
@@ -10,20 +12,37 @@
   line-height: 24px;
   color: $base-black-text;
   text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
   @media (min-width: 768px) {
     font-size: 30px;
     line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    width: 162px;
   }
 }
 
 .statistic__subtitle {
+  background-color: #eaeaea;
+  text-align: center;
   font-size: 12px;
   line-height: 100%;
-  text-align: center;
+  width: 77px;
+  margin: 0 auto;
+  position: relative;
+  top: -8px;
 
   @media (min-width: 768px) {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    top: -16px;
+    right: 3px;
+    width: auto;
+    padding: 8px;
   }
 }

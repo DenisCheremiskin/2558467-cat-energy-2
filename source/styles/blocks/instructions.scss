@@ -15,17 +15,20 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 52px;
   }
 }
 
 .instructions__list {
+  counter-reset: section;
   list-style-type: none;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 37px 153px;
+    grid-gap: 94px 153px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: 1440px) {
@@ -37,6 +40,8 @@
 }
 
 .instructions__item {
+  counter-increment: section;
+  position: relative;
   display: grid;
   grid-template-columns: 60px 200px;
   grid-template-rows: auto;
@@ -44,7 +49,22 @@
   margin: 20px 0;
 
   @media (min-width: 768px) {
-    display: block;
+    grid-template-columns: 60px auto;
+    grid-gap: 31px;
+  }
+}
+
+.instructions__item::after {
+  @media (min-width: 768px) {
+    content: "" counter(section) "";
+    font-family: "Oswald";
+    position: absolute;
+    top: -39px;
+    right: 55px;
+    z-index: -1;
+    color: #f2f2f2;
+    font-size: 280px;
+    line-height: 280px;
   }
 }
 
@@ -56,6 +76,11 @@
   width: 60px;
   height: 60px;
   display: block;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .item-leaf::before {
@@ -94,7 +119,10 @@
   text-align: left;
 
   @media (min-width: 768px) {
+    position: relative;
     font-size: 16px;
     line-height: 24px;
+    grid-column: 1 / -1;
+    width: 245px;
   }
 }

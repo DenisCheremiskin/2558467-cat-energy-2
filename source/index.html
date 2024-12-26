@@ -15,40 +15,43 @@
 
 <body class="page__body ">
   <header class="main-header">
-    <nav class="navigation wrapper">
-      <a class="navigation__logo logo" href="index.html">
+    <nav class="navigation">
+      <a class="navigation__logo logo " href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo_cat_energy_desktop.svg" type="image/svg+xml" width="70" height="59">
           <source media="(min-width: 768px)" srcset="images/logo_cat_energy_tablet.svg" type="image/svg+xml" width="60" height="50">
           <img class="logo__image" src="images/logo_cat_energy.svg" width="33" height="38" alt="Логитип компании Cat Energy">
         </picture>
-        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="128" height="24" alt="Текстовая часть логотипа компании Cat Energy">
+        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="101" height="18" alt="Текстовая часть логотипа компании Cat Energy">
       </a>
-      <ul class="navigation__list">
-        <li class="navigation__item navigation__item--current">
-          <a class="navigation__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-      <button class="navigation__menu-button navigation__menu-button-close " type="button">
-        <span class="visually-hidden">Переключение меню</span>
-      </button>
+
+      <div class="navigation-closed navigation-opened navigation-nojs">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__menu navigation__menu-button navigation__menu-button-close " type="button">
+          <span class="visually-hidden">Переключение меню</span>
+        </button>
+      </div>
     </nav>
     <section class="hero">
       <div class="wrapper">
         <h2 class="hero__title">
-          Функциональное питание для котов
+          Функциональное <br>питание для котов
         </h2>
         <p class="hero__subtitle">
           Занялся собой? Займись котом!

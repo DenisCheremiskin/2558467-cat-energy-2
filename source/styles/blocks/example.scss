@@ -1,5 +1,9 @@
 .example {
   background-color: $base-gray-foh;
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(#ffffff 40%, #eaeaea 40%);
+  }
 }
 
 .example__title {
@@ -15,6 +19,7 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 45px;
   }
 }
 
@@ -32,8 +37,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 80px;
+  grid-gap: 32px;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 170px 170px;
+    grid-gap: 43px;
+  }
 }
 
 .example__item {
@@ -44,12 +54,19 @@
   font-family: "Oswald", sans-serif;
   line-height: 20px;
   color: $base-black-text;
-  text-align: center;
   text-transform: uppercase;
+  padding-left: 44px;
+
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+    display: block;
+    width: 218px;
+    text-align: right;
+    position: relative;
+    bottom: 95px;
+    right: -490px;
   }
 }
 

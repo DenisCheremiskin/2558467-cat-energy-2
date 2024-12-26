@@ -1,10 +1,13 @@
 .logo {
-
 }
 
 .logo__image {
 }
 
 .logo_text {
+  margin: 23px 56px 24px;
 
+  @media (min-width: 768px) {
+    margin: 16px 13px;
+  }
 }

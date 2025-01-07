@@ -17,6 +17,10 @@
     line-height: 60px;
     margin-bottom: 52px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 52px;
+  }
 }
 
 .instructions__list {
@@ -59,18 +63,28 @@
     content: counter(section);
     font-family: "Oswald", sans-serif;
     position: absolute;
-    top: -39px;
+    top: -40px;
     right: 105px;
     z-index: -1;
     color: #f2f2f2;
     font-size: 280px;
     line-height: 280px;
   }
+
+
+  @media (min-width: 1440px) {
+    top: -40px;
+    right: 20px;
+  }
 }
 
 .instructions__item:nth-child(even)::after {
   @media (min-width: 768px) {
     right: 80px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 0;
   }
 }
 

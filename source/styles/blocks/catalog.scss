@@ -16,6 +16,7 @@
   }
 }
 
+
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -38,7 +39,10 @@
 
 .catalog__item {
   display: grid;
-  padding-top: 20px;
+  padding: 20px 20px 25px;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+
   grid-template-areas:
     "a a a a b b b b"
     "a a a a c c c c"
@@ -105,7 +109,6 @@
 .catalog__button {
   grid-area: d;
   padding: 10px 109px;
-  margin-top: 20px;
 
   @media (min-width: 768px) {
     padding: 10px 94px;

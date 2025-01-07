@@ -1,29 +1,50 @@
 .footer {
   background-color: $base-catalog-fon;
   padding: 40px 20px;
+  position: relative;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    padding: 61px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 72px 110px;
   }
 }
 
+
 .footer__logo-link {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width: 768px) {
+    border: none;
+    justify-content: left;
+  }
 }
 
-.footer__logo-image {
-
-}
 
 .footer__social-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  padding: 20px 78px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .footer__social-item {
-  padding: 20px 12px;
+  padding: 0 15px;
 }
 
 .footer__social-link-vk::before {
@@ -33,7 +54,7 @@
   background-color: #666666;
   mask-size: 30px 17px;
   width: 30px;
-  height: 17px;
+  height: 18px;
   display: block;
 }
 
@@ -59,6 +80,18 @@
   display: block;
 }
 
+.link-academy {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.link-academy__logo {
+  margin-right: 23px;
+  align-items: end;
+}
+
 .link-academy__logo::before {
   content: "";
   mask-image: url("../../icons/stack.svg#icon_logo_html");
@@ -67,5 +100,17 @@
   mask-size: 27px 34px;
   width: 27px;
   height: 34px;
-  display: block;
+  position: absolute;
+  bottom: 34px;
+  right: 20px;
+
+  @media (min-width: 768px) {
+    top: 56px;
+    right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 56px;
+    right: 110px;
+  }
 }

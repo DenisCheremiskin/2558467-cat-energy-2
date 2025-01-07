@@ -4,6 +4,10 @@
   @media (min-width: 768px) {
     background-image: linear-gradient(#ffffff 40%, #eaeaea 40%);
   }
+
+  @media (min-width: 1440px) {
+    background-image: linear-gradient(to bottom, #ffffff 16%, #f2f2f2 16%);
+  }
 }
 
 .example__title {
@@ -21,6 +25,11 @@
     line-height: 60px;
     padding-top: 45px;
   }
+
+  @media (min-width: 1440px) {
+
+    padding-bottom: 76px;
+  }
 }
 
 .example__subtitle {
@@ -30,6 +39,10 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 70px 784px 69px 0;
   }
 }
 
@@ -71,4 +84,5 @@
 }
 
 .example__container {
+
 }

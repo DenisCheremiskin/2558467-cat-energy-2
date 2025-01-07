@@ -22,6 +22,13 @@
     top: 92px;
     left: 445px;
   }
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .program--slim::after {
@@ -43,6 +50,14 @@
     top: 81px;
     left: 475px;
   }
+
+  @media (min-width: 1440px) {
+    height: 97px;
+    width: 70px;
+    background-size: 70px 97px;
+    top: 41px;
+    left: 67px;
+  }
 }
 
 .program--power::before {
@@ -63,6 +78,13 @@
     height: 200px;
     top: 91px;
     left: 445px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
   }
 }
 
@@ -86,6 +108,14 @@
     top: 135px;
     left: 411px;
   }
+
+  @media (min-width: 1440px) {
+    height: 56px;
+    width: 134px;
+    background-size: 134px 56px;
+    top: 67px;
+    left: 33px;
+  }
 }
 
 .program__name {
@@ -103,6 +133,10 @@
     line-height: 36px;
     padding: 77px 0 24px 53px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 77px 0 73px 214px;
+  }
 }
 
 .program__description {
@@ -119,6 +153,10 @@
     margin: 0;
     border: none;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 60px 27px 52px;
+  }
 }
 
 .program__link {
@@ -133,8 +171,11 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0;
-    margin: 52px 0 57px 52px;
+    padding: 52px 0 57px 52px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 0 59px 52px;
   }
 }
 

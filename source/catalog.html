@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header wrapper">
+  <header class="main-header">
     <nav class="navigation">
       <a class="navigation__logo logo" href="index.html">
         <picture>
@@ -22,33 +22,36 @@
           <source media="(min-width: 768px)" srcset="images/logo_cat_energy_tablet.svg" type="image/svg+xml" width="60" height="50">
           <img class="logo__image" src="images/logo_cat_energy.svg" width="33" height="38" alt="Логитип компании Cat Energy">
         </picture>
-        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="128" height="24" alt="Текстовая часть логотипа компании Cat Energy">
+        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="101" height="18" alt="Текстовая часть логотипа компании Cat Energy">
       </a>
-      <ul class="navigation__list">
-        <li class="navigation__item navigation__item--current">
-          <a class="navigation__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-      <button class="navigation__menu-button navigation__menu-button-close " type="button">
-        <span class="visually-hidden">Переключение меню</span>
-      </button>
+
+      <div class="navigation-closed navigation-opened navigation-nojs">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__menu navigation__menu-button navigation__menu-button-close " type="button">
+          <span class="visually-hidden">Переключение меню</span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main class="main-catalog">
-    <section class="catalog wrapper">
+    <section class="catalog">
       <h2 class="catalog__title">
         Каталог продукции
       </h2>
@@ -325,6 +328,7 @@
             Заказать
           </a>
         </article>
+
         <div class="catalog-more">
           <h3 class="catalog-more__title">
             Показать еще 100500 товаров
@@ -460,40 +464,38 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrapper">
-      <a class="footer__logo-link" href="index.html">
-        <img class="logo_text" src="images/logo_cat_energy_text.svg" width="118" height="21" alt="Текстовая часть логотипа компании Cat Energy">
-      </a>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a class="footer__social-link-vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">
-              Мы в !
-            </span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">
-              Мы в !
-            </span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link-telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">
-              Мы в !
-            </span>
-          </a>
-        </li>
-      </ul>
-      <a class="link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="link-academy__title link-academy__logo">
-          HTML Academy
-        </span>
-      </a>
-    </div>
+  <footer class="footer wrapper">
+    <a class="footer__logo-link" href="index.html">
+      <img class="footer__logo-text" src="images/logo_cat_energy_text.svg" width="128" height="24" alt="Текстовая часть логотипа компании Cat Energy">
+    </a>
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a class="footer__social-link-vk" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">
+            Мы в !
+          </span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">
+            Мы в !
+          </span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link-telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">
+            Мы в !
+          </span>
+        </a>
+      </li>
+    </ul>
+    <a class="link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="link-academy__title link-academy__logo">
+        HTML Academy
+      </span>
+    </a>
   </footer>
 </body>
 

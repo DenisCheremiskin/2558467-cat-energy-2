@@ -27,7 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 94px 153px;
+    grid-gap: 94px 48px;
     margin-bottom: 83px;
   }
 
@@ -60,11 +60,17 @@
     font-family: "Oswald";
     position: absolute;
     top: -39px;
-    right: 55px;
+    right: 105px;
     z-index: -1;
     color: #f2f2f2;
     font-size: 280px;
     line-height: 280px;
+  }
+}
+
+.instructions__item:nth-child(even)::after {
+  @media (min-width: 768px) {
+    right: 80px;
   }
 }
 

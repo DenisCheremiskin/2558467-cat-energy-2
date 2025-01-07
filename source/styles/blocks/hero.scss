@@ -11,7 +11,10 @@
   }
 
   @media (min-width: 1440px) {
-    background-image: linear-gradient(to left, #68b738d9 60%, #ffffff 60%), url("../../images/hero_bg_image_desktop@2x.jpg");
+    background-image: linear-gradient(to left, #68b738d9 50%, #ffffff 50%), url("../../images/hero_bg_image_desktop@2x.jpg");
+    background-position: right;
+    background-size: contain;
+    margin-bottom: 82px;
   }
 }
 
@@ -32,6 +35,11 @@
     text-align: left;
     color: $base-black-text;
   }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    top: 280px;
+  }
 }
 
 .hero__subtitle {
@@ -50,9 +58,17 @@
     line-height: 20px;
     color: $base-black-text;
   }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    top: 280px;
+  }
 }
 
 .hero__image {
+  @media (min-width: 768px) {
+    margin-left: 447px;
+  }
 }
 
 .hero__button {
@@ -70,4 +86,9 @@
     padding: 14px 26px;
     width: 244px;
   }
+
+  @media (min-width: 1440px) {
+    bottom: 200px;
+  }
 }
+

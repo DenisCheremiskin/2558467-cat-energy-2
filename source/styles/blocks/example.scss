@@ -3,6 +3,8 @@
   padding-bottom: 40px;
 
   @media (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 106px;
     background-image: linear-gradient(#ffffff 60%, #eaeaea 40%);
   }
 
@@ -25,7 +27,6 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 45px;
   }
 
   @media (min-width: 1440px) {
@@ -35,10 +36,12 @@
 }
 
 .example__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   text-align: left;
 
   @media (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 33px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -57,20 +60,21 @@
 
   @media (min-width: 768px) {
     grid-template-columns: 170px 170px;
-    grid-gap: 43px;
+    grid-gap: 35px;
   }
 }
 
 .example__item {
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 
 .example__cost {
+  display: block;
   font-family: "Oswald", sans-serif;
   line-height: 20px;
   color: $base-black-text;
   text-transform: uppercase;
-  padding-left: 44px;
+  padding-left: 45px;
 
 
   @media (min-width: 768px) {

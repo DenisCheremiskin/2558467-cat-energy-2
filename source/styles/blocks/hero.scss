@@ -4,11 +4,15 @@
   background-size: 100%;
   padding-bottom: 20px;
   margin-top: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
 
   @media (min-width: 768px) {
     background-image: none;
-    padding: 0;
-    margin: 0;
+    padding: 0 30px;
+    margin: 0 0 -55px;
   }
 
   @media (min-width: 1440px) {
@@ -30,7 +34,7 @@
   text-align: center;
 
   @media (min-width: 768px) {
-    padding: 54px 90px 40px;
+    padding: 45px 90px 40px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -48,16 +52,17 @@
   font-size: 14px;
   line-height: 14px;
   color: $base-light-color;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   padding: 0 41px 30px;
 
 
   @media (min-width: 768px) {
-    padding: 0 90px 21px;
+    padding: 0 90px 20px;
     font-size: 20px;
     line-height: 20px;
     color: $base-black-text;
+    text-align: start;
   }
 
   @media (min-width: 1440px) {
@@ -67,6 +72,11 @@
 }
 
 .hero__image {
+  @media (min-width: 768px) {
+    padding-right: 10px;
+    display: block;
+  }
+
   @media (min-width: 1440px) {
     margin-left: 447px;
   }
@@ -80,7 +90,7 @@
   @media (min-width: 768px) {
     position: relative;
     left: 90px;
-    bottom: 585px;
+    bottom: 580px;
     z-index: 1;
     font-size: 20px;
     line-height: 26px;

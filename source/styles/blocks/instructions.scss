@@ -1,6 +1,10 @@
 .instructions {
+  padding-bottom: 25px;
+
   @media (min-width: 768px) {
+    padding-top: 12px;
     border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 0;
   }
 
   @media (min-width: 1440px) {
@@ -31,6 +35,7 @@
 .instructions__list {
   counter-reset: section;
   list-style-type: none;
+  padding-top: 1;
 
   @media (min-width: 768px) {
     display: grid;

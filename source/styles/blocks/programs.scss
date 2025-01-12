@@ -1,5 +1,18 @@
 .programs {
 
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .programs__list {
@@ -16,13 +29,11 @@
 .programs__item {
   background-color: $base-catalog-fon;
   margin-bottom: 20px;
-  padding-bottom: 20px;
 
   @media (min-width: 768px) {
     min-width: 708px;
     width: auto;
     margin-bottom: 30px;
-    padding-bottom: 57px;
   }
 
   @media (min-width: 1440px) {

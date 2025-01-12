@@ -10,7 +10,7 @@
   line-height: 24px;
   color: $base-black-text;
   text-align: left;
-  padding: 0 40px 36px 20px;
+  padding: 15px 40px 15px 20px;
   width: fit-content;
 
 
@@ -36,7 +36,7 @@
   position: absolute;
   width: 768px;
   height: 2px;
-  top: 11px;
+  top: 25px;
   right: 0;
 
   @media (min-width: 768px) {
@@ -58,7 +58,7 @@
   line-height: 24px;
   color: $base-black-text;
   text-align: center;
-  padding-bottom: 24px;
+  padding: 18px 30px;
 
   @media (min-width: 768px) {
     font-size: 24px;
@@ -78,7 +78,7 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  width: 275px;
+  width: 280px;
   height: 56px;
   padding-left: 10px;
 
@@ -109,4 +109,5 @@
 
 .promotion form {
   text-align: center;
+  padding-top: 5px;
 }

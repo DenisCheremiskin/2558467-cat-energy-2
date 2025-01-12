@@ -5,6 +5,7 @@
   font-size: 12px;
   line-height: 16px;
   grid-area: c;
+  padding-top: 10px;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -21,7 +22,7 @@
   text-align: left;
 
   @media (min-width: 768px) {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 

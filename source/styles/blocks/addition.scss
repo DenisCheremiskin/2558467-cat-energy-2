@@ -1,9 +1,16 @@
 .addition {
-  padding-top: 25px;
+  position: relative;
+}
+
+.addition__container {
+  padding: 25px 20px;
+
+  @media (min-width: 768px) {
+    padding: 30px;
+  }
 }
 
 .addition__title {
-  position: relative;
   background-color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -11,24 +18,26 @@
   line-height: 24px;
   color: $base-black-text;
   text-align: left;
-  padding-bottom: 36px;
-  box-shadow: -40px 0 #ffffff;
+  padding: 0 40px 36px 20px;
+  width: fit-content;
 
 
   @media (min-width: 768px) {
     font-size: 32px;
     line-height: 32px;
-    width: 341px;
+    margin-left: 30px;
+    width: 381px;
   }
 
   @media (min-width: 1440px) {
     font-size: 40px;
     line-height: 40px;
-    width: 416px;
+    width: 456px;
+    margin-left: 110px;
   }
 }
 
-.addition__title::before {
+.addition::before {
   content: "";
   z-index: -1;
   background-color: #68b738;
@@ -36,12 +45,12 @@
   width: 768px;
   height: 2px;
   top: 11px;
-  right: -250px;
+  right: 0;
 
   @media (min-width: 768px) {
     top: 16px;
     width: 1440px;
-    left: -500px;
+    left: 0;
   }
 
   @media (min-width: 1440px) {
@@ -54,6 +63,10 @@
 .addition__list {
   list-style-type: none;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: 1440px) {
+    width: 975px;
+  }
 }
 
 .addition__list:nth-child(2) {
@@ -79,6 +92,12 @@
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
+
+  @media (min-width: 1440px) {
+    grid-template-areas: "a b c d";
+    border: none;
+    padding: 0;
+  }
 }
 
 .addition__item-title {
@@ -96,6 +115,10 @@
     font-size: 20px;
     line-height: 20px;
     padding: 0 0 25px 38px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
   }
 }
 

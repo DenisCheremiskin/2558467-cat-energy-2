@@ -8,10 +8,16 @@
 
   @media (min-width: 768px) {
     background-image: linear-gradient(#68b738d9 100%, #ffffff 0%), url("../../images/banner_bg_image_tablet@2x.jpg");
+    display: flex;
   }
 
   @media (min-width: 1440px) {
     background-image: linear-gradient(#68b738d9 100%, #ffffff 0%), url("../../images/banner_bg_image_desktop@2x.jpg");
+    flex-direction: column;
+    width: 245px;
+    position: absolute;
+    top: 0;
+    right: 110px;
   }
 }
 
@@ -20,23 +26,39 @@
   line-height: 20px;
   color: $base-light-color;
   text-align: center;
-  padding: 0 60px 43px;
+  padding: 24px 60px 43px;
+
 
   @media (min-width: 768px) {
     text-align: left;
+    padding: 71px 125px 69px 247px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
   }
 }
 
-.banner__title::before {
+.banner::before {
   content: "";
   background-image: url("../../icons/stack.svg#icon_present");
   background-size: 78px 80px;
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 93px 50px;
+  background-position: center 60px;
+  width: 78px;
+  height: 80px;
   display: block;
+  margin: 0 auto;
+  padding: 58px 101px 24px;
+
 
   @media (min-width: 768px) {
-    padding: 93px 50px;
+    padding: 57px 77px 60px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 80px;
+    height: 83px;
+    padding: 57px 82px 46px;
   }
 }

@@ -1,18 +1,18 @@
 .hero {
-
   background-image: linear-gradient(#68b738d9 60%, #ffffff 60%), url("../../images/hero_bg_image_mobile@2x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: 100%;
   padding-bottom: 20px;
+  margin-top: 65px;
 
   @media (min-width: 768px) {
     background-image: none;
     padding: 0;
+    margin: 0;
   }
 
   @media (min-width: 1440px) {
-    background-image: linear-gradient(to left, #68b738d9 50%, #ffffff 50%), url("../../images/hero_bg_image_desktop@2x.jpg");
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%), url("../../images/hero_bg_image_desktop@2x.jpg");
     background-position: right;
     background-size: contain;
     margin-bottom: 82px;

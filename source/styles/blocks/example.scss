@@ -3,11 +3,12 @@
   padding-bottom: 40px;
 
   @media (min-width: 768px) {
-    background-image: linear-gradient(#ffffff 40%, #eaeaea 40%);
+    background-image: linear-gradient(#ffffff 60%, #eaeaea 40%);
   }
 
   @media (min-width: 1440px) {
-    background-image: linear-gradient(to bottom, #ffffff 16%, #f2f2f2 16%);
+    background-image: linear-gradient(to bottom, #ffffff 26%, #f2f2f2 26%);
+    position: relative;
   }
 }
 
@@ -82,7 +83,13 @@
     bottom: 95px;
     right: -490px;
   }
+
+  @media (min-width: 1440px) {
+    position: static;
+    display: inline;
+  }
 }
+
 
 .example__container {
 

@@ -1,13 +1,19 @@
 .navigation {
-  margin: 0 20px;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $base-light-color;
 
   @media (min-width: 768px) {
-    margin: 0 30px;
+    position: relative;
     display: grid;
     grid-template-columns: 175px 1fr;
   }
 
   @media (min-width: 1440px) {
+    background-color: transparent;
     margin: 0 110px;
     position: absolute;
     top: 38px;
@@ -57,14 +63,15 @@
 .navigation__item:last-child {
   border: none;
 
+  @media (min-width: 768px) {
+    padding-right: 0;
+  }
+
   @media (min-width: 1440px) {
     padding-right: 0;
   }
 }
 
-.navigation__link-catalog {
-  color: #111111;
-}
 
 .navigation__item--current {
 

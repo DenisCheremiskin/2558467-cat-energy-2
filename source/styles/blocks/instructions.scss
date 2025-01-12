@@ -1,6 +1,11 @@
 .instructions {
+  @media (min-width: 768px) {
+    border-bottom: 1px solid #e6e6e6;
+  }
 
-  margin-bottom: 49px;
+  @media (min-width: 1440px) {
+    border: none;
+  }
 }
 
 .instructions__title {

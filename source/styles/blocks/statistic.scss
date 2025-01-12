@@ -16,8 +16,6 @@
   @media (min-width: 768px) {
     font-size: 30px;
     line-height: 37px;
-    padding-top: 15px;
-    padding-bottom: 25px;
     width: 162px;
   }
 }
@@ -40,5 +38,9 @@
     right: 3px;
     width: auto;
     padding: 8px;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: #f2f2f2;
   }
 }

@@ -1,15 +1,13 @@
 .map {
-  width: 320px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: 1440px) {
-    width: 1440px;
     margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -25,7 +23,11 @@
     font-size: 20px;
     line-height: 26px;
     width: 180px;
-    padding-left: 50px;
+    justify-self: start;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 40px;
   }
 }
 
@@ -38,23 +40,39 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    padding-right: 50px;
+    justify-self: end;
+  }
+}
+
+.map__address p:last-child {
+  @media (min-width: 768px) {
+    padding-top: 20px;
   }
 }
 
 .map-invite {
   padding: 26px 20px;
+  justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    z-index: 2;
+    background-color: $base-light-color;
+    top: 65px;
+    left: 110px;
+  }
 }
 
-.map-container-catalog {
+.map-invite_catalog {
   background-color: $base-catalog-fon;
-  padding: 26px 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
 }
 
 .map-frame picture {

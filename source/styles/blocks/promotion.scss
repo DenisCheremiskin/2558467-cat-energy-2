@@ -1,18 +1,55 @@
 .promotion {
-
+  position: relative;
 }
 
 .promotion__title {
+  background-color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   color: $base-black-text;
-  text-align: center;
+  text-align: left;
+  padding: 15px 40px 15px 20px;
+  width: fit-content;
+
 
   @media (min-width: 768px) {
     font-size: 32px;
     line-height: 32px;
+    margin-left: 30px;
+    width: 282px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 40px;
+    line-height: 40px;
+    width: 333px;
+    margin-left: 110px;
+  }
+}
+
+.promotion::before {
+  content: "";
+  z-index: -1;
+  background-color: #68b738;
+  position: absolute;
+  width: 768px;
+  height: 2px;
+  top: 25px;
+  right: 0;
+
+  @media (min-width: 768px) {
+    top: 29px;
+    width: 1440px;
+    left: 0;
+  }
+
+  @media (min-width: 1440px) {
+    top: 20px;
+    width: 4000px;
+    left: -1500px;
   }
 }
 
@@ -22,10 +59,18 @@
   line-height: 24px;
   color: $base-black-text;
   text-align: center;
+  padding: 18px 30px;
 
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 32px;
+    width: 632px;
+    margin: 34px auto 0;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: 1440px) {
+    width: fit-content;
   }
 }
 
@@ -35,9 +80,35 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+  width: 280px;
+  height: 56px;
+  padding-left: 10px;
+
+  @media (min-width: 768px) {
+    width: 376px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 503px;
+  }
 }
 
 .promotion__button {
   font-size: 20px;
   line-height: 26px;
+  border: none;
+  padding: 15px 81px;
+  margin: 16px -4px 40px;
+
+  @media (min-width: 768px) {
+    padding: 15px 69px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 15px 69px;
+  }
+}
+
+.promotion form {
+  text-align: center;
 }

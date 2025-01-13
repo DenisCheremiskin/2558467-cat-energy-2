@@ -1,5 +1,14 @@
 .map {
+  margin: 0 auto;
 
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 .map__title {
@@ -9,10 +18,17 @@
   color: #111111;
   text-align: left;
   text-transform: uppercase;
+  width: 140px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
+    width: 180px;
+    justify-self: start;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 40px;
   }
 }
 
@@ -24,9 +40,61 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+    padding-left: 290px;
   }
 }
 
-.map_image {
+.map__address p:last-child {
+  @media (min-width: 768px) {
+    padding-top: 20px;
+  }
+}
 
+.map-invite {
+  padding: 25px 20px;
+  justify-items: center;
+  display: flex;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    z-index: 2;
+    background-color: $base-light-color;
+    top: 65px;
+    left: 110px;
+  }
+}
+
+.map-invite_catalog {
+  background-color: $base-catalog-fon;
+}
+
+.map-frame picture {
+  object-fit: cover;
+  width: 100%;
+  height: 362px;
+  grid-area: a;
+}
+
+.map-frame {
+  display: grid;
+  height: 362px;
+  grid-template-areas: "a";
+}
+
+.map-frame iframe {
+  z-index: 1;
+  border: none;
+  width: 100%;
+  height: 362px;
+  grid-area: a;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
 }

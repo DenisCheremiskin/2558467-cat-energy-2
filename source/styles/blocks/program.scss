@@ -13,6 +13,22 @@
   position: absolute;
   top: 24px;
   left: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 445px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .program--slim::after {
@@ -26,6 +42,22 @@
   position: absolute;
   left: 27px;
   top: 21px;
+
+  @media (min-width: 768px) {
+    height: 194px;
+    width: 140px;
+    background-size: 140px 194px;
+    top: 81px;
+    left: 475px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 97px;
+    width: 70px;
+    background-size: 70px 97px;
+    top: 41px;
+    left: 67px;
+  }
 }
 
 .program--power::before {
@@ -38,6 +70,22 @@
   position: absolute;
   top: 24px;
   left: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    left: 445px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .program--power::after {
@@ -52,6 +100,22 @@
   position: absolute;
   left: 12px;
   top: 35px;
+
+  @media (min-width: 768px) {
+    height: 112px;
+    width: 268px;
+    background-size: 268px 112px;
+    top: 135px;
+    left: 411px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 56px;
+    width: 134px;
+    background-size: 134px 56px;
+    top: 67px;
+    left: 33px;
+  }
 }
 
 .program__name {
@@ -62,19 +126,36 @@
   color: $base-black-text;
   text-align: left;
   text-transform: uppercase;
+  padding: 30px 0 29px 90px;
 
   @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
+    padding: 76px 0 24px 53px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 77px 0 73px 214px;
   }
 }
 
 .program__description {
   text-align: left;
+  margin: 0 33px 0 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 26px;
+    color: $base-black-text;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 316px 48px 52px;
+    margin: 0;
+    border: none;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 60px 27px 52px;
   }
 }
 
@@ -83,14 +164,19 @@
   font-size: 16px;
   line-height: 16px;
   color: $base-black-text;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 22px;
+  display: block;
+  padding: 19px 20px 22px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
+    padding: 6px 0 57px 52px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 0 59px 52px;
   }
 }
 
@@ -104,8 +190,11 @@
   width: 24px;
   height: 12px;
   position: absolute;
-}
+  left: 122px;
+  bottom: 24px;
 
-.program__link:hover::after {
-  content: "";
+  @media (min-width: 768px) {
+    left: 185px;
+    bottom: 65px;
+  }
 }

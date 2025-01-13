@@ -1,5 +1,17 @@
 .example {
   background-color: $base-gray-foh;
+  padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 106px;
+    background-image: linear-gradient(#ffffff 60%, #eaeaea 40%);
+  }
+
+  @media (min-width: 1440px) {
+    background-image: linear-gradient(to bottom, #ffffff 26%, #f2f2f2 26%);
+    position: relative;
+  }
 }
 
 .example__title {
@@ -8,43 +20,80 @@
   font-weight: 400;
   line-height: 40px;
   color: $base-black-text;
-  text-align: center;
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 40px;
 
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: 1440px) {
+
+    padding-bottom: 76px;
+  }
 }
 
 .example__subtitle {
+  margin-bottom: 22px;
   text-align: left;
 
   @media (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 33px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 70px 784px 69px 0;
   }
 }
 
 .example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 32px;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 170px 170px;
+    grid-gap: 35px;
+  }
 }
 
 .example__item {
-
+  padding-bottom: 11px;
 }
 
 .example__cost {
+  display: block;
   font-family: "Oswald", sans-serif;
   line-height: 20px;
   color: $base-black-text;
-  text-align: center;
   text-transform: uppercase;
+  padding-left: 45px;
+
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+    display: block;
+    width: 218px;
+    text-align: right;
+    position: relative;
+    bottom: 95px;
+    right: -490px;
+  }
+
+  @media (min-width: 1440px) {
+    position: static;
+    display: inline;
   }
 }
+
 
 .example__container {
 

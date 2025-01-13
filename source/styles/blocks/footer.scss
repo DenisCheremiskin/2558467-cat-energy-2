@@ -1,21 +1,51 @@
 .footer {
   background-color: $base-catalog-fon;
+  padding: 40px 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    margin-top: 40px;
+    padding: 60px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 72px 110px;
+  }
 }
+
 
 .footer__logo-link {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width: 768px) {
+    border: none;
+    justify-content: left;
+  }
 }
 
-.footer__logo-image {
-
-}
 
 .footer__social-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 22px 0 17px 1px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width: 768px) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .footer__social-item {
-
+  padding: 0 12px;
 }
 
 .footer__social-link-vk::before {
@@ -23,9 +53,9 @@
   mask-image: url("../../icons/stack.svg#icon_vk");
   mask-repeat: no-repeat;
   background-color: #666666;
-  mask-size: 30px 17px;
-  width: 30px;
-  height: 17px;
+  mask-size: 27px 17px;
+  width: 28px;
+  height: 22px;
   display: block;
 }
 
@@ -34,10 +64,11 @@
   mask-image: url("../../icons/stack.svg#icon_youtube");
   mask-repeat: no-repeat;
   background-color: #666666;
-  mask-size: 24px 19px;
-  width: 24px;
-  height: 19px;
+  mask-size: 24px 18px;
+  width: 28px;
+  height: 22px;
   display: block;
+  margin-left: 3px;
 }
 
 .footer__social-link-telegram::before {
@@ -46,9 +77,26 @@
   mask-repeat: no-repeat;
   background-color: #666666;
   mask-size: 19px 17px;
-  width: 19px;
-  height: 17px;
+  width: 28px;
+  height: 22px;
   display: block;
+  margin-left: 2px;
+}
+
+.link-academy {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.link-academy__logo {
+  margin-right: 23px;
+  align-items: end;
+
+  @media (min-width: 768px) {
+    padding-left: 75px;
+  }
 }
 
 .link-academy__logo::before {
@@ -59,5 +107,17 @@
   mask-size: 27px 34px;
   width: 27px;
   height: 34px;
-  display: block;
+  position: absolute;
+  bottom: 34px;
+  right: 20px;
+
+  @media (min-width: 768px) {
+    top: 56px;
+    right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 56px;
+    right: 110px;
+  }
 }

@@ -1,9 +1,31 @@
 .catalog-more {
+  display: grid;
+  padding: 25px 20px;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
 
+  @media (min-width: 768px) {
+    border: 2px solid #f2f2f2;
+    margin-top: 82px;
+    padding: 25px 35px;
+  }
 }
 
 .catalog-more::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#catalog_moree_plus");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 23px;
 
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+    margin: 23px auto;
+  }
 }
 
 .catalog-more__title {
@@ -14,10 +36,15 @@
   color: #111111;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 8px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
+    padding: 20px 54px 7px;
+  }
+
+  @media (min-width: 1440px) {
   }
 }
 
@@ -25,14 +52,33 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  padding-bottom: 20px;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 18px;
+    padding: 10px 40px 55px;
+  }
+
+  @media (min-width: 1440px) {
+
   }
 }
 
 .catalog-more__button {
   color: $base-color-text;
   background-color: $base-catalog-fon;
+  padding: 10px 95px;
+
+
+  @media (min-width: 768px) {
+    padding: 7px 70px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    align-content: center;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 10px 79px;
+  }
 }

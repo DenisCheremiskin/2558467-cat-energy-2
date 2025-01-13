@@ -9,6 +9,7 @@
   @media (min-width: 768px) {
     background-image: linear-gradient(#68b738d9 100%, #ffffff 0%), url("../../images/banner_bg_image_tablet@2x.jpg");
     display: flex;
+    padding-top: 40px;
   }
 
   @media (min-width: 1440px) {
@@ -32,7 +33,8 @@
 
   @media (min-width: 768px) {
     text-align: left;
-    padding: 71px 125px 69px 247px;
+    padding: 51px 130px 69px 140px;
+    white-space: pre-line;
   }
 
   @media (min-width: 1440px) {
@@ -54,7 +56,7 @@
 
 
   @media (min-width: 768px) {
-    padding: 57px 77px 60px;
+    padding: 57px 50px 60px 210px;
   }
 
   @media (min-width: 1440px) {

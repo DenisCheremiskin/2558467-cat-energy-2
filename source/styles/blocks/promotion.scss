@@ -19,6 +19,7 @@
     line-height: 32px;
     margin-left: 30px;
     width: 282px;
+    padding-left: 40px;
   }
 
   @media (min-width: 1440px) {
@@ -40,7 +41,7 @@
   right: 0;
 
   @media (min-width: 768px) {
-    top: 16px;
+    top: 29px;
     width: 1440px;
     left: 0;
   }
@@ -64,7 +65,8 @@
     font-size: 24px;
     line-height: 32px;
     width: 632px;
-    margin: 0 auto;
+    margin: 34px auto 0;
+    padding-bottom: 7px;
   }
 
   @media (min-width: 1440px) {
@@ -109,5 +111,4 @@
 
 .promotion form {
   text-align: center;
-  padding-top: 5px;
 }

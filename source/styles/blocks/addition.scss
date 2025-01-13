@@ -5,9 +5,11 @@
 
 .addition__container {
   padding: 10px 20px;
+  margin-top: 26px;
 
   @media (min-width: 768px) {
     padding: 30px;
+    padding-bottom: 45px;
   }
 }
 
@@ -27,6 +29,8 @@
     font-size: 32px;
     line-height: 32px;
     margin-left: 30px;
+    padding-top: 4px;
+    padding-left: 40px;
     width: 381px;
   }
 
@@ -49,7 +53,7 @@
   right: 0;
 
   @media (min-width: 768px) {
-    top: 16px;
+    top: 18px;
     width: 1440px;
     left: 0;
   }
@@ -62,8 +66,15 @@
 }
 
 .addition__list {
+
+  position: relative;
   list-style-type: none;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: 768px) {
+    border: 1px solid #cdcdcd;
+    padding-top: 20px;
+  }
 
   @media (min-width: 1440px) {
     width: 975px;
@@ -77,7 +88,6 @@
 
 .addition__item {
   display: grid;
-  position: relative;
   padding-bottom: 18px;
   grid-template-areas:
     "a a"
@@ -86,12 +96,10 @@
     "d d";
 
   @media (min-width: 768px) {
-    padding-bottom: 40px;
+    padding-bottom: 27px;
     grid-template-areas:
       "a b c"
       "d d d";
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
   }
 
   @media (min-width: 1440px) {
@@ -115,7 +123,7 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
-    padding: 0 0 25px 38px;
+    padding: 5px 0 25px 38px;
   }
 
   @media (min-width: 1440px) {
@@ -133,7 +141,8 @@
     font-size: 16px;
     line-height: 20px;
     position: absolute;
-    right: -49px;
+    top: 28px;
+    right: 131px;
   }
 }
 
@@ -145,7 +154,9 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 20px;
-    padding-right: 38px;
+    position: absolute;
+    top: 26px;
+    right: 40px;
   }
 }
 
